@@ -8,8 +8,8 @@ snake[0] = {
 }
 let direction = "right";
 let food = {
-    x: Math.floor[Math.random() * 15 + 1] * box,
-    y: Math.floor[Math.random() * 15 + 1] * box //floor tira a parte flutuante do número randômico
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box //floor tira a parte flutuante do número randômico
 }
 
 function criarBG(){
@@ -60,7 +60,7 @@ function iniciarJogo(){
     let snakeY = snake[0].y;
 
     if(direction == "right")snakeX += box;
-    if(direction = "left") snakeX -= box;
+    if(direction == "left") snakeX -= box;
     if(direction == "up") snakeY -= box;
     if(direction == "down") snakeY += box;
 
@@ -68,8 +68,8 @@ function iniciarJogo(){
         snake.pop(); //retirar o último elemento do array
     }
     else {
-        food.x = Math.floor[Math.random() * 15 + 1] * box;
-        food.y = Math.floor[Math.random() * 15 + 1] * box; 
+        food.x = Math.floor(Math.random() * 15 + 1) * box;
+        food.y = Math.floor(Math.random() * 15 + 1) * box; 
     }
 
 
